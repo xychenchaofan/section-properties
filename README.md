@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/robbievanleeuwen/section-properties.svg?branch=master)](https://travis-ci.com/robbievanleeuwen/section-properties) [![Documentation Status](https://readthedocs.org/projects/sectionproperties/badge/?version=latest)](https://sectionproperties.readthedocs.io/en/latest/?badge=latest)
 
-一个用有限元法分析任意截面截面特性的python库（主体由Robbie van Leeuwen完成）。 *sectionproperties* 可用于确定结构设计中使用的截面特性也可以可视化由作用力和弯矩组合产生的横截面应力。
+一个用有限元法分析任意截面截面特性的python库（程序主体由Robbie van Leeuwen完成，汉化工作由陈超凡完成）。 *sectionproperties* 可用于确定结构设计中使用的截面特性也可以可视化由作用力和弯矩组合产生的横截面应力。
 
 [Subscribe](http://eepurl.com/dMMUeg) to the mailing list!
 
@@ -51,12 +51,12 @@ $ pip install sectionproperties
 - [x] Composite material properties 组合材料特性
 
 ### Cross-Section Analysis:
-- [x] Global axis geometric section properties:
+- [x] Global axis geometric section properties（整体坐标系中截面特性）:
   - [x] Area 面积
   - [x] First moments of area 静距
-  - [x] Second moments of area 
+  - [x] Second moments of area 惯性矩
   - [x] Elastic centroid 弹性中心
-- [x] Centroidal axis geometric section properties:
+- [x] Centroidal axis geometric section properties（形心轴中截面特性）:
   - [x] Second moments of area
   - [x] Elastic section moduli
   - [ ] Yield moment 屈服弯矩
@@ -64,7 +64,7 @@ $ pip install sectionproperties
   - [x] Plastic centroid
   - [x] Plastic section moduli
   - [x] Shape factors
-- [x] Principal axis geometric section properties:
+- [x] Principal axis geometric section properties（形心主轴中截面特性）:
   - [x] Second moments of area
   - [x] Elastic section moduli
   - [ ] Yield moment 屈服弯矩
@@ -72,10 +72,10 @@ $ pip install sectionproperties
   - [x] Plastic centroid 塑性中心
   - [x] Plastic section moduli
   - [x] Shape factors
-- [x] Warping section properties:
+- [x] Warping section properties（翘曲特性）:
   - [x] Torsion constant
   - [x] Warping constant
-- [x] Shear section properties:
+- [x] Shear section properties（剪切特性）:
   - [x] Shear centre (elastic method) 
   - [x] Shear centre (Trefftz's method)
   - [x] Shear areas (global axis) 剪切面积（整体坐标系）
