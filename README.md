@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.com/robbievanleeuwen/section-properties.svg?branch=master)](https://travis-ci.com/robbievanleeuwen/section-properties) [![Documentation Status](https://readthedocs.org/projects/sectionproperties/badge/?version=latest)](https://sectionproperties.readthedocs.io/en/latest/?badge=latest)
 
-A python package for the analysis of arbitrary cross-sections using the finite element method written by Robbie van Leeuwen. *sectionproperties* can be used to determine section properties to be used in structural design and visualise cross-sectional stresses resulting from combinations of applied forces and bending moments.
+一个用有限元法分析任意截面截面特性的python库（主体由Robbie van Leeuwen完成）。 *sectionproperties* 可用于确定结构设计中使用的截面特性也可以可视化由作用力和弯矩组合产生的横截面应力。
 
 [Subscribe](http://eepurl.com/dMMUeg) to the mailing list!
 
 ## Installation:
 
-For more detailed installation instructions, refer to the [documentation](https://sectionproperties.readthedocs.io/).
+了解更多安装信息, 参照此处 [documentation](https://sectionproperties.readthedocs.io/).
 
 ### UNIX (MacOS/Linux):
 
@@ -35,31 +35,31 @@ $ pip install sectionproperties
 
 ## Documentation:
 
-*sectionproperties* has a fully documented python API which you can find at [https://sectionproperties.readthedocs.io/](https://sectionproperties.readthedocs.io/). To read more about the theory behind the program, its implementation and some more examples, check out my blog at [https://robbievanleeuwen.github.io/](https://robbievanleeuwen.github.io/).
+*sectionproperties* 有一个完整的python api文档，您可以在找到 [https://sectionproperties.readthedocs.io/](https://sectionproperties.readthedocs.io/). 要了解更多关于程序背后的理论、实现和更多示例，请访问作者的博客  [https://robbievanleeuwen.github.io/](https://robbievanleeuwen.github.io/).
 
 ## Current Capabilities:
 
 ### Pre-Processor:
 - [x] Python API
-- [x] Custom section geometry input
-- [x] Common section geometry generators
-- [x] Multiple geometry merging
+- [x] Custom section geometry input 输入自定义截面几何图形 
+- [x] Common section geometry generators 常见截面几何形状生成
+- [x] Multiple geometry merging 多个几何图形合并
 - [x] Geometry cleaning
 - [ ] JSON input file
 - [ ] .dxf import
-- [x] Quadratic triangular mesh generation
-- [x] Composite material properties
+- [x] Quadratic triangular mesh generation 二次三角网格生成 
+- [x] Composite material properties 组合材料特性
 
 ### Cross-Section Analysis:
 - [x] Global axis geometric section properties:
-  - [x] Area
-  - [x] First moments of area
-  - [x] Second moments of area
-  - [x] Elastic centroid
+  - [x] Area 面积
+  - [x] First moments of area 静距
+  - [x] Second moments of area 
+  - [x] Elastic centroid 弹性中心
 - [x] Centroidal axis geometric section properties:
   - [x] Second moments of area
   - [x] Elastic section moduli
-  - [ ] Yield moment
+  - [ ] Yield moment 屈服弯矩
   - [x] Radii of gyration
   - [x] Plastic centroid
   - [x] Plastic section moduli
@@ -67,36 +67,36 @@ $ pip install sectionproperties
 - [x] Principal axis geometric section properties:
   - [x] Second moments of area
   - [x] Elastic section moduli
-  - [ ] Yield moment
+  - [ ] Yield moment 屈服弯矩
   - [x] Radii of gyration
-  - [x] Plastic centroid
+  - [x] Plastic centroid 塑性中心
   - [x] Plastic section moduli
   - [x] Shape factors
 - [x] Warping section properties:
   - [x] Torsion constant
   - [x] Warping constant
 - [x] Shear section properties:
-  - [x] Shear centre (elastic method)
+  - [x] Shear centre (elastic method) 
   - [x] Shear centre (Trefftz's method)
-  - [x] Shear areas (global axis)
-  - [x] Shear areas (principal axis)
-- [x] Cross-section stresses
+  - [x] Shear areas (global axis) 剪切面积（整体坐标系）
+  - [x] Shear areas (principal axis) 剪切面积（形心主轴）
+- [x] Cross-section stresses 截面应力
 
 ### Solver:
-- [x] Direct solver
-- [x] CGS iterative solver
-- [x] Sparse matrices
+- [x] Direct solver 直接法求解器
+- [x] CGS iterative solver CGS迭代求解器 
+- [x] Sparse matrices 稀疏矩阵
 
 ### Post-Processor:
-- [x] Plot geometry
-- [x] Plot mesh
-- [x] Plot centroids
-- [x] Plot cross-section stresses
-- [x] Retrieve cross-section stresses
-- [ ] Generate cross-section report
+- [x] Plot geometry 绘制几何图形
+- [x] Plot mesh 绘制网格划分
+- [x] Plot centroids 绘制中点
+- [x] Plot cross-section stresses 绘制截面应力
+- [x] Retrieve cross-section stresses 
+- [ ] Generate cross-section report 生成截面报告
 - [ ] Export to Paraview
 
 ### Additional Modules:
-- [ ] Optimisation
-- [ ] Reinforced Concrete
-- [ ] Steel
+- [ ] Optimisation 结构优化
+- [ ] Reinforced Concrete 钢筋混凝土
+- [ ] Steel 钢结构
